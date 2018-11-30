@@ -1,0 +1,120 @@
+<html>
+    <!DOCTYPE html5>
+<lang="en-uk">
+<head> 
+<meta charset="utf-8"> 
+<title>Gallery</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+<meta name="description" content="Kinetic Typography Website">
+
+
+</head>
+
+<body>
+<center>
+    <img src="images/logo-06.png" style="height:100px; margin-left: -70px;" >
+<div id="nav">
+			<ul id="dropdown">
+				<li><a href="index.html"><h1>Home</h1></a></li>
+				<li><a href="Video.html"><h1>Video</h1></a></li>
+ 				<li><a href="about.html"><h1>About</h1></a></li>
+ 				<li><a href="WebsiteJournal.html"><h1>Journals</h1></a>
+ 					<ul class="sub">
+						<li><a href="WebsiteJournal.html"><h3>Video Journal</h3></a></li>
+						<li><a href="WebsiteJournal.html"><h3>Website Journal</h3></a></li> 
+  				    
+ 					</ul>
+ 				</li>
+ 				<li><a href="gallery.html"><h1>Gallery</h1></a></li>
+ 			</ul>
+ 			</div>
+			</header></div>
+
+			<div id="content">
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="Screen1.jpg" style="width:100%">
+    <div class="text">The intro</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="Screen2.jpg" style="width:100%">
+    <div class="text">Cute fishies.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="Screen3.jpg" style="width:100%">
+    <div class="text">Bubblegum Effect</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="Screen4.jpg" style="width:100%">
+    <div class="text">A funny part.</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+		</div>
+
+</center>  
+
+<div class="footer">
+  <p>Angel Jefferson - University of the Arts 2018</p>
+</div>
+
+
+	<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+	
+  
+	
+</script>
+
+</body>
+</html>

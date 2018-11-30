@@ -1,0 +1,409 @@
+body {
+	padding: 0;
+	text-align: center;
+	font-family: 'century gothic', futura, calibri, sans-serif;
+	font-size:14px;
+	font-weight: lighter;
+	color: #000;
+	line-height:22px;
+	letter-spacing:0.5px;
+	background-color: #ffffff;
+	margin: 25px auto 25px auto;
+	background-image: url(images/background-01.jpg);
+background-repeat: no-repeat;
+background-color:#999999;
+background-position: top center;
+background-size: cover;
+}
+header{
+	color: #fff;
+	text-align: center;
+	width: 850px;
+	height: 6.25em;
+	margin: -490px auto 190px auto;
+}
+footer{
+	font-family: 'century gothic', futura, calibri, sans-serif;
+	font-size: 11px;
+	font-weight: lighter;
+	width: 834px;
+	height: 25px;
+	padding: 12px 0 0px 0;
+	margin: 20px auto 25px auto;
+	border-top: 1px dotted #786e68;
+	border-bottom: 1px dotted #786e68;
+}
+h1{
+	font-size: 15px;
+	font-family: 'century gothic', futura, calibri, sans-serif;
+	text-transform: lowercase;
+}
+h1:hover{
+	text-transform: italic;
+}
+h2{
+ color: #eadeed;
+ font-size: 18px;
+ text-transform: uppercase;
+}
+h3{
+ font-size: 12px;
+ text-align: center;
+ text-transform: lowercase;
+ font-family: 'century gothic', futura, calibri, sans-serif;
+}
+h3:hover{
+letter-spacing: 1px;
+}
+h4{ 
+font-size: 9;
+}
+h5{
+	font-size: 28px;
+	font-weight: lighter;
+	font-family: 'century gothic', futura, calibri, sans-serif;
+	color: #000;
+	margin:  10px auto 10px auto;
+}
+a:link{
+	color: #d4cad8;
+	text-decoration:none;
+}
+a:visited{
+	color: #d4cad8;
+	text-decoration:none;
+}
+a:active{
+	color: #d4cad8;
+	text-decoration:none;
+}
+a:hover{
+	color: #d4cad8;
+	letter-spacing: 1px;
+}
+/* code for dropdown menu*/
+#dropdown{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#dropdown li{
+	height: 35px;
+	width: 80px;
+	float: left;
+	padding-right: -50px;
+	list-style: none;
+	background: ;
+	position: relative;
+	-webkit-transition: background-color 1s ease;
+	-moz-transition: background-color 1s ease;
+	-o-transition: background-color 1s ease;
+	transition: background-color 1s ease;
+}
+#dropdown ul{
+	background: #fff;
+	display: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	max-height: 50px;
+	z-index: 500;
+	border: solid 1px;
+}
+#dropdown li a{
+	display: block;
+	padding: .1px .1px;
+	text-decoration: none;
+}
+#dropdown li ul{
+	display: none;
+	width:auto;
+	border: solid 1px;
+	background: #fff;
+}
+#dropdown li:hover{
+	background: #fff;
+	
+}
+#dropdown li:hover ul{
+	display: block;
+}
+#dropdown li:hover a {/*increace the z-index over that of the menu*/
+    position:relative;
+    z-index:5;
+}
+#dropdown li:hover li:first-child a{/*first menu-item gets a top border*/
+    margin-top: 0px;
+    border-top: 1px solid;
+}
+#dropdown li:hover li:last-child a{/*last menu-item gets a bottom border*/
+    border-bottom:1px solid;
+    margin-top: 0px;
+}
+#dropdown li:hover ul{/* move up menu to cover up part of top border*/
+    position:relative;
+    top:0px;
+}
+#dropdown li:hover ul a{
+	border-left: solid 1px;
+	border-right: solid 1px ; 
+}
+#nav ul .sub li {
+  padding-top: -4px;
+  float: none;
+  white-space:no-wrap;
+  clear:both;
+  background: #fff;
+  width:200px;
+}
+#nav ul .sub li a {
+    display:block;float:center;width:220px; background: #fff;
+}
+#nav ul .sub li a:hover{
+	-webkit-transition: background-color 2s ease;
+	-moz-transition: background-color 2s ease;
+	-o-transition: background-color 2s ease;
+	transition: background-color 2s ease;
+}
+/* containers*/
+#nav{
+	height: 35px;
+	font-size: 7px;
+	font-weight: lighter;
+	float: center;
+	width: 400px;
+	margin: 10px auto 25px auto;
+}
+#main{
+	float:center;
+	text-align: left;
+	width: 744px;
+	border: 1px solid gray;
+	margin: 25px auto 25px auto;
+	padding: 15px 42px 15px 42px;
+}
+#content{
+	text-align: left;
+	width: 520px;
+	margin: 25px 350px 25px auto;
+	padding-right: 40px;
+}
+#sidebar{
+	padding: 8px 8px;
+	background: #fff;
+	width: 260px;
+	border: solid 1px gray;
+	border-collapse: separate;
+}
+#content, #sidebar {
+    display: table-cell;
+    border-collapse: separate;
+    height:100%;
+}
+img { 
+   align: middle;
+}
+/* code for tables*/
+table {
+	float: center;
+	font-weight: lighter;
+	border-collapse: collapse;
+	width: 600px;
+	margin-bottom: 5px;
+}
+
+td, th {
+	padding: 6px 20px;
+	text-align: left;
+	border-spacing: 10px;
+    border-collapse: separate;
+}
+
+th {
+}
+
+div#content {
+	
+	height: 415px;
+	margin-top: 40px;
+
+}
+
+
+/* code for gallery*/
+
+** {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* code for blog */
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background:
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+   
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+}
